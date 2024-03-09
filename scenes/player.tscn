@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://bgrjg2x36yqfg"]
+[gd_scene load_steps=9 format=3 uid="uid://bgrjg2x36yqfg"]
 
 [ext_resource type="Texture2D" uid="uid://s0f1f4r8swlg" path="res://assets/TX Player.png" id="1_fq2wq"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_nvp1a"]
+[ext_resource type="PackedScene" uid="uid://bledb03vcydda" path="res://scenes/_system/pause/Pause_menu.tscn" id="3_wl8fu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kt6fa"]
 size = Vector2(18.5, 14)
@@ -80,3 +81,7 @@ shape = SubResource("RectangleShape2D_kt6fa")
 libraries = {
 "": SubResource("AnimationLibrary_rgf4a")
 }
+
+[node name="Hud" type="CanvasLayer" parent="."]
+
+[node name="Pause_menu" parent="Hud" instance=ExtResource("3_wl8fu")]
