@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dg4omxaurs083"]
+
+[ext_resource type="Texture2D" uid="uid://sjvj877l2d4n" path="res://assets/TX Props.png" id="1_4egpq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nt5np"]
+size = Vector2(30, 24)
+
+[node name="Wall01" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_4egpq")
+offset = Vector2(0, -38)
+region_enabled = true
+region_rect = Rect2(352, 174, 32, 77)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -13)
+shape = SubResource("RectangleShape2D_nt5np")

@@ -1,0 +1,300 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_w1rbu"]
+
+[resource]
+script = ExtResource("1_w1rbu")
+using_states = PackedStringArray()
+titles = {}
+character_names = PackedStringArray("旁白", "你", "?", "我")
+first_title = "1"
+lines = {
+"1": {
+"character": "旁白",
+"character_replacements": Array[Dictionary]([]),
+"id": "1",
+"next_id": "2",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "你再次感受到了时间的流逝。那是一种无法表达的感受。你又感受到了一股力量，将你推出一个空间。一阵恍惚后，你感受到了光线。",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "你再次感受到了时间的流逝。那是一种无法表达的感受。你又感受到了一股力量，将你推出一个空间。一阵恍惚后，你感受到了光线。",
+"type": "dialogue"
+},
+"10": {
+"character": "?",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "11",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "你可知发生了什么事？",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "你可知发生了什么事？",
+"type": "dialogue"
+},
+"11": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"next_id_after": "17",
+"notes": "",
+"responses": PackedStringArray("11", "13", "15"),
+"tags": PackedStringArray(),
+"text": "不知道",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "不知道",
+"type": "response"
+},
+"12": {
+"character": "?",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "17",
+"notes": "",
+"parent_id": "11",
+"tags": PackedStringArray(),
+"text": "看来事情比我想象的要严重的多。",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "看来事情比我想象的要严重的多。",
+"type": "dialogue"
+},
+"13": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"next_id_after": "17",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "......",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "......",
+"type": "response"
+},
+"14": {
+"character": "?",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "17",
+"notes": "",
+"parent_id": "13",
+"tags": PackedStringArray(),
+"text": "看来事情比我想象的要严重的多。",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "看来事情比我想象的要严重的多。",
+"type": "dialogue"
+},
+"15": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "16",
+"next_id_after": "17",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "[摇了摇头]",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[摇了摇头]",
+"type": "response"
+},
+"16": {
+"character": "?",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "17",
+"notes": "",
+"parent_id": "15",
+"tags": PackedStringArray(),
+"text": "看来事情比我想象的要严重的多。",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "看来事情比我想象的要严重的多。",
+"type": "dialogue"
+},
+"17": {
+"character": "我",
+"character_replacements": Array[Dictionary]([]),
+"id": "17",
+"next_id": "18",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "发生什么事了？",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "发生什么事了？",
+"type": "dialogue"
+},
+"18": {
+"character": "?",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "19",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "你什么都不记得了？",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "你什么都不记得了？",
+"type": "dialogue"
+},
+"19": {
+"character": "我",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "(点头)",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "(点头)",
+"type": "dialogue"
+},
+"2": {
+"character": "旁白",
+"character_replacements": Array[Dictionary]([]),
+"id": "2",
+"next_id": "3",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "你恢复了知觉，你好像正以一个躺着的姿势。",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "你恢复了知觉，你好像正以一个躺着的姿势。",
+"type": "dialogue"
+},
+"20": {
+"character": "旁白",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "21",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "(你好像从他的脸上捕捉到了一起激动)",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "(你好像从他的脸上捕捉到了一起激动)",
+"type": "dialogue"
+},
+"21": {
+"character": "?",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "22",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "那就让我简单说一下现状了。其他的有时间再讲。记得设置名字哦(doge)",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "那就让我简单说一下现状了。其他的有时间再讲。记得设置名字哦(doge)",
+"type": "dialogue"
+},
+"22": {
+"id": "22",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"3": {
+"character": "旁白",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "你恢复了听觉，四周死寂一片。你感受到愈来愈多的能力重新回到了你的体内。",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "你恢复了听觉，四周死寂一片。你感受到愈来愈多的能力重新回到了你的体内。",
+"type": "dialogue"
+},
+"4": {
+"character": "旁白",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "现在，你在朦胧中对自己说:睁开眼睛。身体收到了你的信号，你看到了刺激的光线，你的手下意识地挡住眼睛。",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "现在，你在朦胧中对自己说:睁开眼睛。身体收到了你的信号，你看到了刺激的光线，你的手下意识地挡住眼睛。",
+"type": "dialogue"
+},
+"5": {
+"character": "旁白",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "你觉得自己体内出现了一股没有的力量，但很快消失不见。",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "你觉得自己体内出现了一股没有的力量，但很快消失不见。",
+"type": "dialogue"
+},
+"6": {
+"character": "你",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "(茫然地看着四周)(脑海里有一个声音:这里好像是一个关押囚禁他人的地方)",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "(茫然地看着四周)(脑海里有一个声音:这里好像是一个关押囚禁他人的地方)",
+"type": "dialogue"
+},
+"7": {
+"character": "?",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "你还好吗？",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "你还好吗？",
+"type": "dialogue"
+},
+"8": {
+"character": "旁白",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "一个身影渐渐出现在你的视线中，那是一位女性，身材修长，一身蓝衣，脸被斗篷遮挡而看不震真切，不知怎的，她使你感到很不自在。",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "一个身影渐渐出现在你的视线中，那是一位女性，身材修长，一身蓝衣，脸被斗篷遮挡而看不震真切，不知怎的，她使你感到很不自在。",
+"type": "dialogue"
+},
+"9": {
+"character": "我",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "(......)",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "(......)",
+"type": "dialogue"
+}
+}
+raw_text = "旁白: 你再次感受到了时间的流逝。那是一种无法表达的感受。你又感受到了一股力量，将你推出一个空间。一阵恍惚后，你感受到了光线。
+旁白: 你恢复了知觉，你好像正以一个躺着的姿势。
+旁白: 你恢复了听觉，四周死寂一片。你感受到愈来愈多的能力重新回到了你的体内。
+旁白: 现在，你在朦胧中对自己说:睁开眼睛。身体收到了你的信号，你看到了刺激的光线，你的手下意识地挡住眼睛。
+旁白: 你觉得自己体内出现了一股没有的力量，但很快消失不见。
+你: (茫然地看着四周)(脑海里有一个声音:这里好像是一个关押囚禁他人的地方)
+?: 你还好吗？
+旁白: 一个身影渐渐出现在你的视线中，那是一位女性，身材修长，一身蓝衣，脸被斗篷遮挡而看不震真切，不知怎的，她使你感到很不自在。
+我: (......)
+?: 你可知发生了什么事？
+- 不知道
+	?: 看来事情比我想象的要严重的多。
+- ......
+	?: 看来事情比我想象的要严重的多。
+- [摇了摇头]
+	?: 看来事情比我想象的要严重的多。
+我: 发生什么事了？
+?: 你什么都不记得了？
+我: (点头)
+旁白: (你好像从他的脸上捕捉到了一起激动)
+?: 那就让我简单说一下现状了。其他的有时间再讲。记得设置名字哦(doge)
+=> END"
+metadata/dialogue_manager_version = "2.34.0"
