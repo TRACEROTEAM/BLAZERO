@@ -142,7 +142,7 @@ func parse(text: String, path: String) -> Error:
 		if raw_line.begins_with("using "):
 			var using_match: RegExMatch = USING_REGEX.search(raw_line)
 			if "state" in using_match.names:
-				var using_state: String = using_match.strings[using_match.names.state]
+				var using_state: String = using_match.strings[using_match.names.state].strip_edges()
 				if not using_state in autoload_names:
 					add_error(id, 0, DialogueConstants.ERR_UNKNOWN_USING)
 				elif not using_state in using_states:
@@ -333,6 +333,7 @@ func parse(text: String, path: String) -> Error:
 		# Regular dialogue
 		else:
 			# Remove escape character
+			if raw_line.begins_with("\\using"): raw_line = raw_line.substr(1)
 			if raw_line.begins_with("\\if"): raw_line = raw_line.substr(1)
 			if raw_line.begins_with("\\elif"): raw_line = raw_line.substr(1)
 			if raw_line.begins_with("\\else"): raw_line = raw_line.substr(1)
@@ -490,6 +491,7 @@ func get_errors() -> Array[Dictionary]:
 
 ## Prepare the parser by collecting all lines and titles
 func prepare(text: String, path: String, include_imported_titles_hashes: bool = true) -> void:
+	using_states = []
 	errors = []
 	imported_paths = []
 	_imported_line_map = {}

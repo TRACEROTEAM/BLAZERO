@@ -8832,7 +8832,6 @@ scale = Vector2(0.96, 0.96)
 position = Vector2(-353, 229)
 
 [node name="ScriptIntro_button" type="Button" parent="."]
-visible = false
 offset_left = 88.0
 offset_top = -95.0
 offset_right = 187.0

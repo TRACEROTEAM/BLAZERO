@@ -10,7 +10,10 @@ config_version=5
 
 [application]
 
-config/name="RPG Demo"
+config/name="BLAZERO"
+config/name_localized={
+"zh_CN": "炽零"
+}
 run/main_scene="res://Title/TitleScene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
@@ -19,6 +22,12 @@ config/icon="res://icon.svg"
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 Global="*res://global.gd"
+
+[dialogue_manager]
+
+general/missing_translations_are_errors=true
+general/default_csv_locale="en_US"
+general/include_character_in_translation_exports=true
 
 [display]
 
@@ -69,7 +78,7 @@ pause={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://Language/Main_en_US.po", "res://Language/Main_zh_CN.po")
+locale/translations=PackedStringArray("res://Language/Main_en_US.po", "res://Language/Main_zh_CN.po", "res://dialog/welcome.en.translation", "res://dialog/welcomec.en.translation", "res://dialog/CharacterName_en_US.po", "res://dialog/CharacterName_zh_CN.po", "res://dialog/Dialogue_en_US.po", "res://dialog/Dialogue_zh_CN.po")
 locale/translations_pot_files=PackedStringArray("res://dialog/welcome.dialogue", "res://dialog/first.dialogue")
 
 [rendering]

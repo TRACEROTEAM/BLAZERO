@@ -1,0 +1,13 @@
+# LD_Anvil, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BLAZERO - Character's name Translation\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+
+#Main
+msgctxt "dialogue"
+msgid "旁白"
+msgstr "旁白"

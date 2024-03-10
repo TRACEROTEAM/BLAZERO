@@ -1,0 +1,77 @@
+# LD_Anvil, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BLAZERO - Dialogue Translation\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+
+#Intro
+msgctxt "intro0"
+msgid "你再次感受到了时间的流逝。那是一种无法表达的感受。你又感受到了一股力量，将你推出一个空间。一阵恍惚后，你感受到了光线。"
+msgstr "你再次感受到了时间的流逝。那是一种无法表达的感受。你又感受到了一股力量，将你推出一个空间。一阵恍惚后，你感受到了光线。"
+
+msgctxt "intro1"
+msgid "你恢复了知觉，你好像正以一个躺着的姿势。"
+msgstr "你恢复了知觉，你好像正以一个躺着的姿势。"
+
+msgctxt "intro2"
+msgid "你恢复了听觉，四周死寂一片。你感受到愈来愈多的能力重新回到了你的体内。"
+msgstr "你恢复了听觉，四周死寂一片。你感受到愈来愈多的能力重新回到了你的体内。"
+
+msgctxt "intro3"
+msgid "现在，你在朦胧中对自己说:睁开眼睛。身体收到了你的信号，你看到了刺激的光线，你的手下意识地挡住眼睛。"
+msgstr "现在，你在朦胧中对自己说:睁开眼睛。身体收到了你的信号，你看到了刺激的光线，你的手下意识地挡住眼睛。"
+
+msgctxt "intro4"
+msgid "你觉得自己体内出现了一股没有的力量，但很快消失不见。"
+msgstr "你觉得自己体内出现了一股没有的力量，但很快消失不见。"
+
+msgctxt "intro5"
+msgid "(茫然地看着四周)(脑海里有一个声音:这里好像是一个关押囚禁他人的地方)"
+msgstr "(茫然地看着四周)(脑海里有一个声音:这里好像是一个关押囚禁他人的地方)"
+
+msgctxt "intro6"
+msgid "你还好吗？"
+msgstr "你还好吗？"
+
+msgctxt "intro7"
+msgid "一个身影渐渐出现在你的视线中，那是一位女性，身材修长，一身蓝衣，脸被斗篷遮挡而看不震真切，不知怎的，她使你感到很不自在。"
+msgstr "一个身影渐渐出现在你的视线中，那是一位女性，身材修长，一身蓝衣，脸被斗篷遮挡而看不震真切，不知怎的，她使你感到很不自在。"
+
+msgctxt "intro9"
+msgid "你可知发生了什么事？"
+msgstr "你可知发生了什么事？"
+
+msgctxt "intro10"
+msgid "不知道"
+msgstr "不知道"
+
+msgctxt "intro12"
+msgid "[摇了摇头]"
+msgstr "[摇了摇头]"
+
+msgctxt "intro13"
+msgid "看来事情比我想象的要严重的多。"
+msgstr "看来事情比我想象的要严重的多。"
+
+msgctxt "intro14"
+msgid "发生什么事了？"
+msgstr "发生什么事了？"
+
+msgctxt "intro15"
+msgid "你什么都不记得了？"
+msgstr "你什么都不记得了？"
+
+msgctxt "intro16"
+msgid "(点头)"
+msgstr "(点头)"
+
+msgctxt "intro17"
+msgid "(你好像从他的脸上捕捉到了一起激动)"
+msgstr "(你好像从他的脸上捕捉到了一起激动)"
+
+msgctxt "intro18"
+msgid "那就让我简单说一下现状了。其他的有时间再讲。记得设置名字哦(doge)"
+msgstr "那就让我简单说一下现状了。其他的有时间再讲。记得设置名字哦(doge)"

@@ -18,7 +18,6 @@ func _unhandled_input(_event):
 			escape_released = false
 			_on_resume_button_pressed()
 func _on_resume_button_pressed():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	get_parent().get_parent().current_menu = "HUD"
 	hide()
 	

@@ -95,6 +95,9 @@ msgstr "结束对话"
 msgid "generate_line_ids"
 msgstr "生成行 ID"
 
+msgid "save_characters_to_csv"
+msgstr "Save character names to CSV..."
+
 msgid "save_to_csv"
 msgstr "生成 CSV"
 
@@ -133,6 +136,15 @@ msgstr "在 Godot 侧边栏中显示"
 
 msgid "settings.revert_to_default_test_scene"
 msgstr "重置测试场景设定"
+
+msgid "settings.default_balloon_hint"
+msgstr "Custom balloon to use when calling \"DialogueManager.show_balloon()\""
+
+msgid "settings.revert_to_default_balloon"
+msgstr "Revert to default balloon"
+
+msgid "settings.default_balloon_path"
+msgstr "<example balloon>"
 
 msgid "settings.autoload"
 msgstr "Autoload"
@@ -377,15 +389,6 @@ msgstr "文件中存在{errrors}个错误。请查看调试输出。"
 msgid "runtime.invalid_expression"
 msgstr "表达式“{expression}”无效：{error}"
 
-msgid "runtime.unsupported_array_method"
-msgstr "不支持的数组方法{method_name}。"
-
-msgid "runtime.unsupported_dictionary_method"
-msgstr "不支持的字典方法{method_name}。"
-
-msgid "runtime.unsupported_quaternion_method"
-msgstr "不支持的 Quarternion 方法{method_name}。"
-
 msgid "runtime.array_index_out_of_bounds"
 msgstr "数组索引“{index}”越界。（数组名：“{array}”）"
 
@@ -415,3 +418,39 @@ msgstr "未知操作符。"
 
 msgid "runtime.something_went_wrong"
 msgstr "有什么出错了。"
+
+msgid "settings.recompile_warning"
+msgstr "Changing these settings will force a recompile of all dialogue. Only change them if you know what you are doing."
+
+msgid "settings.create_lines_for_responses_with_characters"
+msgstr "Create child dialogue line for responses with character names in them"
+
+msgid "settings.open_in_external_editor"
+msgstr "Open dialogue files in external editor"
+
+msgid "settings.external_editor_warning"
+msgstr "Note: Syntax highlighting and detailed error checking are not supported in external editors."
+
+msgid "settings.include_characters_in_translations"
+msgstr "Include character names in translation exports"
+
+msgid "settings.include_notes_in_translations"
+msgstr "Include notes (## comments) in translation exports"
+
+msgid "settings.check_for_updates"
+msgstr "Check for updates"
+
+msgid "errors.unknown_using"
+msgstr "Unknown autoload in using statement."
+
+msgid "runtime.unknown_autoload"
+msgstr "\"{autoload}\" doesn't appear to be a valid autoload."
+
+msgid "runtime.expected_n_got_n_args"
+msgstr "\"{method}\" was called with {received} arguments but it only has {expected}."
+
+msgid "runtime.unsupported_array_type"
+msgstr "Array[{type}] isn't supported in mutations. Use Array as a type instead."
+
+msgid "runtime.dialogue_balloon_missing_start_method"
+msgstr "Your dialogue balloon is missing a \"start\" or \"Start\" method."
