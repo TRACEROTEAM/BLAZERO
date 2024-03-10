@@ -29,49 +29,49 @@ msgid "你觉得自己体内出现了一股没有的力量，但很快消失不�
 msgstr "You feel like a force appears within you that you don't have, but it quickly disappears."
 
 msgctxt "intro5"
-msgid "(茫然地看着四周)(脑海里有一个声音:这里好像是一个关押囚禁他人的地方)"
-msgstr "(茫然地看着四周)(脑海里有一个声音:这里好像是一个关押囚禁他人的地方)"
+msgid "[color=bfbfbf][i]茫然地看着四周[/i][/color](这里好像是一个关押囚禁他人的地方)"
+msgstr "[color=bfbfbf][i]Blankly looking around[/i][/color](It seems to be a place where people are imprisoned)"
 
 msgctxt "intro6"
 msgid "你还好吗？"
-msgstr "你还好吗？"
+msgstr "You okay?"
 
 msgctxt "intro7"
-msgid "一个身影渐渐出现在你的视线中，那是一位女性，身材修长，一身蓝衣，脸被斗篷遮挡而看不震真切，不知怎的，她使你感到很不自在。"
-msgstr "一个身影渐渐出现在你的视线中，那是一位女性，身材修长，一身蓝衣，脸被斗篷遮挡而看不震真切，不知怎的，她使你感到很不自在。"
+msgid "一个身影渐渐出现在你的视线中，那是一位女性，身材修长，一身蓝衣，脸被斗篷遮挡而看不真切，不知怎的，她使你感到很不自在。"
+msgstr "A figure gradually appears in your sight, it is a woman, slender and dressed in blue, her face is obscured by a cloak and you can't see it clearly, and somehow she makes you feel very uncomfortable."
 
 msgctxt "intro9"
 msgid "你可知发生了什么事？"
-msgstr "你可知发生了什么事？"
+msgstr "Do you know what's going on?"
 
 msgctxt "intro10"
 msgid "不知道"
-msgstr "不知道"
+msgstr "I don't know"
 
 msgctxt "intro12"
 msgid "[摇了摇头]"
-msgstr "[摇了摇头]"
+msgstr "[Shook head]"
 
 msgctxt "intro13"
 msgid "看来事情比我想象的要严重的多。"
-msgstr "看来事情比我想象的要严重的多。"
+msgstr "It seems that things are much more serious than I thought."
 
 msgctxt "intro14"
 msgid "发生什么事了？"
-msgstr "发生什么事了？"
+msgstr "What happened?"
 
 msgctxt "intro15"
 msgid "你什么都不记得了？"
-msgstr "你什么都不记得了？"
+msgstr "You don't remember anything?"
 
 msgctxt "intro16"
-msgid "(点头)"
-msgstr "(点头)"
+msgid "[color=bfbfbf][i]点头[/i][/color]"
+msgstr "[color=bfbfbf][i]Nod[/i][/color]"
 
 msgctxt "intro17"
-msgid "(你好像从他的脸上捕捉到了一起激动)"
-msgstr "(你好像从他的脸上捕捉到了一起激动)"
+msgid "你好像从她的脸上捕捉到了一起激动"
+msgstr "You seem to catch the excitement on her face"
 
 msgctxt "intro18"
 msgid "那就让我简单说一下现状了。其他的有时间再讲。记得设置名字哦(doge)"
-msgstr "那就让我简单说一下现状了。其他的有时间再讲。记得设置名字哦(doge)"
+msgstr "Let me briefly talk about the current situation. I'll talk about the rest in time. Don't forget to set your name (doge)"

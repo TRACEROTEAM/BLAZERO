@@ -9,5 +9,5 @@ msgstr ""
 
 #Main
 msgctxt "dialogue"
-msgid "旁白"
-msgstr "旁白"
+msgid "我"
+msgstr "我"
