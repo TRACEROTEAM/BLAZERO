@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://doyuny4x7d4w5"]
+
+[ext_resource type="TileSet" uid="uid://fl5l3t3huy8n" path="res://assets/world_tileset.tres" id="1_c6txg"]
+
+[node name="Prison" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("1_c6txg")
+format = 2
