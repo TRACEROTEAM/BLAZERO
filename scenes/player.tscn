@@ -321,9 +321,6 @@ libraries = {
 }
 
 [node name="CharacterAnimationTree" type="AnimationTree" parent="CharacterTex"]
-libraries = {
-"": SubResource("AnimationLibrary_phxwq")
-}
 tree_root = SubResource("AnimationNodeStateMachine_thx8v")
 anim_player = NodePath("../CharacterAnimate")
 parameters/Idle/blend_position = Vector2(-0.184725, 0.54185)

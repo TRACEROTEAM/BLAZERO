@@ -438,6 +438,10 @@ texture = ExtResource("2_he8aw")
 2:6/0 = 0
 3:5/0 = 0
 3:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ib16x"]
 texture = ExtResource("3_46vhc")

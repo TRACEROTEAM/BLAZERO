@@ -991,6 +991,60 @@ libraries = {
 "": SubResource("AnimationLibrary_pqf80")
 }
 
+[node name="LoginWindow" type="Window" parent="."]
+title = "Login"
+size = Vector2i(500, 250)
+visible = false
+exclusive = true
+unresizable = true
+always_on_top = true
+transparent = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LoginWindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="LoginWindow/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "title.line0"
+horizontal_alignment = 1
+
+[node name="UserName" type="LineEdit" parent="LoginWindow/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "User Name"
+
+[node name="Password" type="LineEdit" parent="LoginWindow/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Password"
+
+[node name="LoginButton" type="Button" parent="LoginWindow/VBoxContainer"]
+layout_mode = 2
+text = "Login"
+
+[node name="SettingAndQq" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Setting" type="Button" parent="SettingAndQq"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "S"
+
+[node name="Qq" type="Button" parent="SettingAndQq"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Q"
+
 [connection signal="timeout" from="Main/HBoxContainer/Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Main/Panel/Control/MainMenu/MainMenu/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Main/Panel/Control/MainMenu/MainMenu/ContinueButton" to="." method="_on_continue_button_pressed"]
@@ -1007,3 +1061,5 @@ libraries = {
 [connection signal="pressed" from="Main/Panel/Control/Options/BackButton" to="." method="_on_options_back_button_pressed"]
 [connection signal="pressed" from="Main/Panel/Control/ExitConfirm/ConfirmButton" to="." method="_on_confirm_button_pressed"]
 [connection signal="pressed" from="Main/Panel/Control/ExitConfirm/CancelButton" to="." method="_on_cancel_button_pressed"]
+[connection signal="close_requested" from="LoginWindow" to="." method="_on_login_window_close_requested"]
+[connection signal="pressed" from="LoginWindow/VBoxContainer/LoginButton" to="." method="_on_login_button_pressed"]
