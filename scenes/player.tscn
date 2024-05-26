@@ -5,9 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://bledb03vcydda" path="res://scenes/_system/pause/Pause_menu.tscn" id="3_wl8fu"]
 [ext_resource type="Texture2D" uid="uid://lwypvutcl2pm" path="res://assets/a_universal.png" id="4_5vjsw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kt6fa"]
-size = Vector2(18.5, 14)
-
 [sub_resource type="Animation" id="Animation_xph3w"]
 length = 0.001
 tracks/0/type = "bezier"
@@ -283,7 +280,11 @@ states/Walk/node = SubResource("AnimationNodeBlendSpace2D_2qxeg")
 states/Walk/position = Vector2(645, 100)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_hut6d"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_5osvw"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_rl0i0")]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kt6fa"]
+size = Vector2(24, 14)
+
 [node name="Player" type="CharacterBody2D"]
+z_index = -2
 script = ExtResource("1_nvp1a")
 
 [node name="Graphics" type="Node2D" parent="."]
@@ -295,10 +296,6 @@ offset = Vector2(0, -25)
 hframes = 3
 region_enabled = true
 region_rect = Rect2(0, 0, 96, 64)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.75, -7)
-shape = SubResource("RectangleShape2D_kt6fa")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -321,7 +318,14 @@ libraries = {
 }
 
 [node name="CharacterAnimationTree" type="AnimationTree" parent="CharacterTex"]
+libraries = {
+"": SubResource("AnimationLibrary_phxwq")
+}
 tree_root = SubResource("AnimationNodeStateMachine_thx8v")
 anim_player = NodePath("../CharacterAnimate")
 parameters/Idle/blend_position = Vector2(-0.184725, 0.54185)
 parameters/Walk/blend_position = Vector2(0, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 23)
+shape = SubResource("RectangleShape2D_kt6fa")

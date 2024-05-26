@@ -84,7 +84,7 @@ dash={
 [internationalization]
 
 locale/translations=PackedStringArray("res://Language/Main_en_US.po", "res://Language/Main_zh_CN.po", "res://dialog/welcome.en.translation", "res://dialog/welcomec.en.translation", "res://dialog/CharacterName_en_US.po", "res://dialog/CharacterName_zh_CN.po", "res://dialog/Dialogue_en_US.po", "res://dialog/Dialogue_zh_CN.po")
-locale/translations_pot_files=PackedStringArray("res://dialog/welcome.dialogue", "res://dialog/first.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialog/welcome.dialogue", "res://dialog/first.dialogue", "res://BLAZERO/dialog/first.dialogue", "res://BLAZERO/dialog/welcome.dialogue")
 
 [rendering]
 

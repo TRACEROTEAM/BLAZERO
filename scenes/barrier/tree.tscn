@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dc032ewpa8ic4"]
+
+[ext_resource type="Script" path="res://scenes/barrier/barrier.gd" id="1_fy8pk"]
+[ext_resource type="Texture2D" uid="uid://cwtvqr6wcljs3" path="res://assets/image_1708833566575.png" id="2_8r4fg"]
+
+[node name="Tree" type="StaticBody2D"]
+z_index = 1
+script = ExtResource("1_fy8pk")
+
+[node name="Collision" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, 14)
+polygon = PackedVector2Array(8, -3, 5, 2, -5, 2, -8, -3, -8, -12, -7, -14, 7, -14, 8, -12)
+
+[node name="Collision_area" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collision_area"]
+position = Vector2(-2, 1)
+polygon = PackedVector2Array(-6, -1, -6, -17, 10, -17, 10, -1)
+
+[node name="Visualize_components" type="Sprite2D" parent="."]
+texture = ExtResource("2_8r4fg")
+region_enabled = true
+region_rect = Rect2(112, 48, 16, 32)
+
+[connection signal="body_entered" from="Collision_area" to="." method="_on_collision_area_body_entered"]
+[connection signal="body_exited" from="Collision_area" to="." method="_on_collision_area_body_exited"]

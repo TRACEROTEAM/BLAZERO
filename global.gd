@@ -26,6 +26,7 @@ func save_config():
 	file.set_value("control","mouse_sens",mouse_sens)
 	var err = file.save(CONFIG_PATH)
 	if err != OK:	push_error("Fail to save config: %d" % err)
+
 func load_config():
 	var file = ConfigFile.new()
 	var err = file.load(CONFIG_PATH)

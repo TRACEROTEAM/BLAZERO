@@ -4,8 +4,8 @@ extends CharacterBody2D
 @export var SPEED = 1
 @export var DASH = 0.5
 
-@export var FRICTION = 5
-@export var ACCELERATION = 1
+@export var FRICTION = 10
+@export var ACCELERATION = 2
 const JUMP_VELOCITY = -400.0
 
 @onready var sprite_2d: Sprite2D = $Graphics/Sprite2D
@@ -36,7 +36,7 @@ func _input(event: InputEvent) -> void:
 	elif event.is_action_pressed("move_right"):
 		sprite_2d.frame = 2
 		graphics.scale.x = -1
-		
+
 func _unhandled_input(_event):
 	# Pause.
 	if Input.is_action_just_pressed("pause"):
@@ -61,11 +61,11 @@ func _physics_process(delta: float) -> void:
 	#Move & Animate
 	if input_direction != Vector2.ZERO:
 		#velocity = input_direction * SPEED
-		velocity = velocity.move_toward(input_direction * (SPEED + isDash * DASH) * 100, ACCELERATION * delta * 100)
+		velocity = input_direction * (SPEED + isDash * DASH) * 100
 		if velocity.x * input_direction.x <= 0 and velocity.x!=0:
-			velocity = velocity.move_toward(Vector2(0,velocity.y),FRICTION * delta * 100)
+			velocity = Vector2(0,velocity.y)
 		if velocity.y * input_direction.y <= 0 and velocity.y!=0:
-			velocity = velocity.move_toward(Vector2(velocity.x,0),FRICTION * delta * 100)
+			velocity = Vector2(velocity.x,0)
 		
 		animationTree.set("parameters/Idle/blend_position",Vector2(input_direction.x,input_direction.y))
 		animationTree.set("parameters/Walk/blend_position",Vector2(input_direction.x,input_direction.y))
@@ -73,7 +73,7 @@ func _physics_process(delta: float) -> void:
 		
 		#animation_player.play("run")
 	else:
-		velocity = velocity.lerp(Vector2.ZERO,0.1)
+		velocity = velocity.lerp(Vector2.ZERO,0.9)
 		
 		animationState.travel("Idle")
 		

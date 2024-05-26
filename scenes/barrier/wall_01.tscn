@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dg4omxaurs083"]
+
+[ext_resource type="Texture2D" uid="uid://sjvj877l2d4n" path="res://assets/TX Props.png" id="1_4egpq"]
+[ext_resource type="PackedScene" uid="uid://dc032ewpa8ic4" path="res://scenes/barrier/tree.tscn" id="1_7ehfn"]
+
+[node name="wall_01" instance=ExtResource("1_7ehfn")]
+
+[node name="Collision" parent="." index="0"]
+position = Vector2(0, 37)
+polygon = PackedVector2Array(16, 2, -16, 2, -16, -27, 16, -27)
+
+[node name="CollisionPolygon2D" parent="Collision_area" index="0"]
+position = Vector2(-10, 11)
+polygon = PackedVector2Array(-6, -1, -6, -50, 26, -50, 26, -1)
+
+[node name="Visualize_components" parent="." index="2"]
+texture = ExtResource("1_4egpq")
+region_rect = Rect2(352, 174, 32, 77)

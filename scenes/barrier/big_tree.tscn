@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://plu4s7yepajo"]
+
+[ext_resource type="PackedScene" uid="uid://dc032ewpa8ic4" path="res://scenes/barrier/tree.tscn" id="1_xeumg"]
+
+[node name="big_tree" instance=ExtResource("1_xeumg")]
+
+[node name="Collision" parent="." index="0"]
+polygon = PackedVector2Array(17, -3, 19, -1, 19, 3, 13, 8, 6, 10, -6, 10, -13, 8, -19, 3, -19, -1, -17, -3, -19, -12, -19, -14, 19, -14, 19, -12)
+
+[node name="CollisionPolygon2D" parent="Collision_area" index="0"]
+position = Vector2(-16, -7)
+polygon = PackedVector2Array(-3, 7, -3, -17, 35, -17, 35, 7)
+
+[node name="Visualize_components" parent="." index="2"]
+region_rect = Rect2(112, 0, 48, 48)
