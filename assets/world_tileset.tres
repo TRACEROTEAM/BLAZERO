@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://deklwdnlx6l4b" path="res://assets/RoadTiles.png" id="3_46vhc"]
 [ext_resource type="PackedScene" uid="uid://plu4s7yepajo" path="res://scenes/barrier/big_tree.tscn" id="5_kwa2a"]
 [ext_resource type="PackedScene" uid="uid://dc032ewpa8ic4" path="res://scenes/barrier/tree.tscn" id="6_bpeyp"]
-[ext_resource type="PackedScene" uid="uid://dg4omxaurs083" path="res://scenes/barrier/wall_01.tscn" id="7_4u5rc"]
+[ext_resource type="PackedScene" uid="uid://dg4omxaurs083" path="res://scenes/wall_01.tscn" id="7_4u5rc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aj4do"]
 texture = ExtResource("1_et5xb")
